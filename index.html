@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Slideshow</title>
+  <title>Assignment 5</title>
   <style>
     .topnav{
       background-color: rgb(66,66,66);
@@ -19,6 +19,9 @@
       text-align: center;
       padding: 14px 16px;
       font-size: 17px;
+      font-family: Arial, Helvetica, sans-serif;
+      text-decoration: none;
+      font-weight: 600;
       
     }
 
@@ -28,9 +31,10 @@
     }
 
     .topnav a.active{
-      background-color: #04AA6D;
+      background-color: #868a74;
       color: white;
     }
+    
 
     .header-container{
       text-align: right;
@@ -53,7 +57,7 @@
     .slideshow-container {
       position: relative;
       width: 100%;
-      height: calc(100% - 40px); /* Adjust to accommodate link height */
+      height: 900px;
       overflow: hidden;
       top:40px;
     }
@@ -64,7 +68,8 @@
 
     .slide img {
       width: 100%;
-      height: auto;
+      height: 900px;
+      object-fit: cover;
     }
 
     @media screen and (max-height:768px){
@@ -135,19 +140,31 @@
         color:rgb(66, 66, 66);
         
     }
-    .read-more:hover 
-    {
+    .read-more:hover {
         background-color: gray;
         border-color: gray; 
         color: white;
     }
-    .random-images{
-        text-align: center;
-        background-color: rgb(66, 66, 66);
-        background-clip: border-box;
-        padding: 30px;
+     
+    .socials {
+        font-size: 20px;
+        text-align: center; 
+        margin-top: 50px; 
         font-family: Arial, Helvetica, sans-serif;
+        padding-bottom: 100px;
     }
+
+    .social-icon{
+      display: inline-block;
+      margin: 0 40px;
+    }
+
+    .social-icon img{
+      width: 250px;
+      height: 250px;
+    }
+
+    
     footer{
         font-family: Arial, Helvetica, sans-serif;
         background-color: black;
@@ -155,6 +172,7 @@
         background-clip: border-box;
         padding-top: 30px;
         padding-bottom: 30px;
+        text-align: center;
     }
 
     .author{
@@ -170,8 +188,8 @@
 <body id="top">
   <div class="topnav">
     <a class="active" href="#top" onclick="scrollToTop()">Home</a>
-    <a href="movie">Movie</a>
-    <a href="about">About</a>
+    <a href="file:///C:/Users/Nammari%20Drayton/OneDrive%20-%20SUNY%20at%20Oneonta/Documents/Spring%202025%20Classes/Internet%20Programming/Assignment%205/Assignment-5(Favorite%20Movie).html">Movie</a>
+    <a href="file:///C:/Users/Nammari%20Drayton/OneDrive%20-%20SUNY%20at%20Oneonta/Documents/Spring%202025%20Classes/Internet%20Programming/Assignment%205/Assignment-5(About%20Me).html">About</a>
   </div>
   <div class="header-container">
     <h1>
@@ -205,25 +223,26 @@
         This is the first time hes ever programmed a website from scratch with html so if something is broken on the website he apologizes. 
 
     </p>
-    <a href="https://www.youtube.com/" class="read-more" >Read More</a>
+    <a href="file:///C:/Users/Nammari%20Drayton/OneDrive%20-%20SUNY%20at%20Oneonta/Documents/Spring%202025%20Classes/Internet%20Programming/Assignment%205/Assignment-5(About%20Me).html" class="read-more" >Read More</a>
   </div>
-  <!--Random Images on My Camera Roll-->
-  <div class="random-images">
-    <h1>Random Images on My Camera Roll</h1>
-    <div class="random-images-slideshow">
-        <img src="IMG_8656.jpg" alt="Slide 1" style="max-width: 200px; max-height: 200px;">
+  <!--Socials Section-->
+  <div class="socials">
+    <h1>Socials</h1>
+    <div class="social-icon">
+      <a href="https://www.youtube.com/channel/UCpW9bKBL48tgw48YVx4s78g"><img src="IMG_2212.jpg" alt="Youtube"></a>
     </div>
-    <div class="random-images-slideshow">
-        <img src="Self Portait.jpg" alt="Slide 2" style="max-width: 200px; max-height: 200px;">
+    <div class="social-icon">
+      <a href="https://www.instagram.com/nonohvk/"><img src="instagram.png" alt="Instagram"></a>
     </div>
-    <div class="random-images-slideshow">
-        <img src="IMG_5715.jpg" alt="Slide 3" style="max-width: 200px; max-height: 200px;">
+    <div class="social-icon">
+      <a href="https://www.chess.com/member/nonomcnose"><img src="chess.png" alt="Chess.com"></a>
     </div>
+  </div>
 
   </div>
   <footer>
-      <div class="author"> Author: Nammari Drayton</div><br/>
-      <div class="email">Email: Draynt796@oneonta.edu</div>
+      <div class="author"> &copy; 2024 Nammri Drayton. All rights reserved.</div>
+      
     
   </footer>
   <script>
@@ -269,4 +288,3 @@ function scrollToTop() {
   </script>
 </body>
 </html>
-
